@@ -1,0 +1,41 @@
+public class OprBit
+{
+	public static void main(String[] args)
+	{
+		int ti = 150; /* 150 = 1001 0110 */ 
+		int si = 128; /* 128 = 1000 0000 */
+		int prodi = 0; /* 128 = 1000 0000 */
+		System.out.println("ti & si = " + prodi);
+		prodi = ~ti & ~si; /* 151 = 0110 1001 */
+		System.out.println("~ti & ~si = " + prodi);
+	}
+}
+
+
+
+public class OprLogika
+{
+	public static void main(String[] args)
+	{
+		boolean ti = true;
+		boolean si = false;
+		System.out.println("ti && si = " + (ti && si));
+		System.out.println("!si = " + (!si));
+	}
+}
+
+
+
+public class OprPenugasan
+{
+	public static void main(String[] args)
+	{
+		int ti = 150;
+		int si = 128;
+		int prodi = 0;
+		prodi = ti + si;
+		System.out.println("prodi = ti + si = " + prodi);
+		prodi += ti;
+		System.out.println("prodi += ti = " + prodi);
+	}
+}
